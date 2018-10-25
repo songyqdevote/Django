@@ -39,6 +39,13 @@
 	《python全栈开发-web框架篇》
 day51
 	DRP原则： Don't repeat yourself！
+20181025
+	1.创建项目：django-asmin startproject mysite
+	dir 显示目录
+	cd mysite 
+	2.创建应用
+	python manage.py startapp blog
+	3.启动Django项目
 	
 	
 	
