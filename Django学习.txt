@@ -46,6 +46,16 @@ day51
 	2.创建应用
 	python manage.py startapp blog
 	3.启动Django项目
+	4.进入pycharm的blog应用下的urls.py 添加函数路径；
+	在views下添加函数；
+	进入pycharm的blog应用下的settings.py下INSTALLED_APPS列表里添加元素blog
+运行
+	1）pycharm主界面下方的Terminal界面：python manage.py runserver 8000;
+	2) 直接点右上方的的运行按钮；
+	3）使用cmd进入项目目录：python manage.py runserver 8000;
+	cd\进入主目录；f:进入f
+	正则表达式使用方法：path(r"cur_time",views.cur_time),
+
 	
 	
 	
