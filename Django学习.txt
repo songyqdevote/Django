@@ -55,6 +55,11 @@ day51
 	3）使用cmd进入项目目录：python manage.py runserver 8000;
 	cd\进入主目录；f:进入f
 	正则表达式使用方法：path(r"cur_time",views.cur_time),
+	在template创建cur_time.html,
+	在views.py创建函数：
+	def cur_time(request):
+		return render(request,"cur_time.html")
+	
 
 	
 	
