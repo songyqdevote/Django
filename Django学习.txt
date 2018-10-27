@@ -59,7 +59,39 @@ day51
 	在views.py创建函数：
 	def cur_time(request):
 		return render(request,"cur_time.html")
-	
+20181027
+	CommandError: You must set settings.ALLOWED_HOSTS if DEBUG is False.
+	提示DEBUG为False时,必须设置settings.ALLOWED_HOSTS .
+
+	ALLOWED_HOSTS = [
+		'.example.com',  # Allow domain and subdomains
+		'.example.com.',  # Also allow FQDN and subdomains
+	]
+	或者您需要设置所有的均可访问.那么可以这样设置.
+	ALLOWED_HOSTS = ['*']
+	任何用户均可以访问.
+	然后再访问下.恢复正常.
+总结步骤：
+	1、创建一个Django项目：Django-admin startproject XXX
+
+	2、创建一个App：Django-admin startapp XXX
+
+	3、将App配置到Setting文件当中去
+
+	4、打开app的文件下的model.py文件，编写model，这里主要是编写web所需要的数据表
+
+	5、将数据导入到数据库当中去：python manage.py makemigrations XXX
+
+	6、同步数据库：python manage.py migrate
+
+	7、打开admin.py文件，注册数据库，这里是将model注册到后台当中，以便用后台来对数据进行增删改
+
+	8、创建模板：在项目目录下创建templates文件夹，在文件夹下创建XXX.html模板文件
+
+	9、配置Setting：
+	10、设置views.py文件，导出数据库中的数据并在模板中使用这些数据
+
+	11、绑定url：打开urls.py文件，一个view对应一个url，设置访问路径，哪个url访问哪个view
 
 	
 	
