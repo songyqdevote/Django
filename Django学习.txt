@@ -92,7 +92,10 @@ day51
 	10、设置views.py文件，导出数据库中的数据并在模板中使用这些数据
 
 	11、绑定url：打开urls.py文件，一个view对应一个url，设置访问路径，哪个url访问哪个view
-
+数据库操作：
+	在你改动了 model.py的内容之后执行下面的命令：
+	python manger.py makemigrations
+	初始化数据库：python manage.py migrate
 	
 	
 	
