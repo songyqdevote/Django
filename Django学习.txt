@@ -96,7 +96,13 @@ day51
 	在你改动了 model.py的内容之后执行下面的命令：
 	python manger.py makemigrations
 	初始化数据库：python manage.py migrate
-	
+20181031
+五、Django Views(视图函数)
+	http请求产生的两个核心对象：
+	HTTP请求：HttpRequest对象；
+	HTTP响应：HTTPResponse对象；
+	所在位置：django.http
+	页面渲染：render（）render(req, "index.html",{"user_list":user_list})
 	
 	
 	
